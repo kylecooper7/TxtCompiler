@@ -1,0 +1,7 @@
+boolean this = true;
+if(
+this
+)
+{
+System.out.println("Test successful.");
+}

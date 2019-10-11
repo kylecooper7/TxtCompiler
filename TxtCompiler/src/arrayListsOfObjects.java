@@ -14,6 +14,8 @@ public class arrayListsOfObjects
 		static ArrayList <StringObject> strings = new ArrayList <StringObject> ();
 		
 		static ArrayList <String> nextLineDataType = new ArrayList <String> ();
+		static ArrayList <Boolean> conditionOfBooly = new ArrayList <Boolean> ();
+		
 		
 		static ArrayList <String> triggers = new ArrayList <String> ();
 	

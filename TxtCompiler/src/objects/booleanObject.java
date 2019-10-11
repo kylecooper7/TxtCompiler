@@ -19,7 +19,7 @@ public void setName(String name)
 		this.name = name;
 		
 	}
-public boolean isValue()
+public boolean getValue()
 	{
 		return value;
 	}

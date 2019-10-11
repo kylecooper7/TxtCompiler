@@ -1,2 +1,15 @@
-String flavor = "vanilla";
-System.out.println(flavor);
+String blah = "this";
+String useless = "school";
+boolean booly = true;
+boolean booly2 = true;
+if(booly2)
+{
+System.out.println(blah);
+
+if(booly)
+{
+System.out.println(useless);
+}
+
+}
+System.out.println("just this");

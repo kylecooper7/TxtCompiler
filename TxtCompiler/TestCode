@@ -1,10 +1,11 @@
-String blah = "this";
+String str = "input";
+
 String useless = "school";
 boolean booly = true;
 boolean booly2 = true;
 if(booly2)
 {
-System.out.println(blah);
+System.out.println(str);
 
 if(booly)
 {

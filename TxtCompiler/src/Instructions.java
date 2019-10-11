@@ -1,10 +1,12 @@
 import objects.StringObject;
 import objects.booleanObject;
+import java.util.Scanner;
 
 public class Instructions {
 	
 	static boolean boolyBooly = true;
 	static int bracketCounter = 0;
+	static Scanner stringInput = new Scanner(System.in);
 // all the different types of instructions
 	public static void assignInstructions(String line) {
 		String s = "";
@@ -126,7 +128,12 @@ public class Instructions {
 			
 			String[] words = s.split(" ");
 			String name = words[1];
+			
 			String theString = s.substring((words[0].length() + words[1].length() + 5), s.length() - 2);
+			if(theString.equals("input")) {
+				System.out.println("Please input a value for the String " + name + ":");
+				theString = stringInput.nextLine();
+			}
 			arrayListsOfObjects.strings.add(new StringObject("", ""));
 			arrayListsOfObjects.strings.get(arrayListsOfObjects.strings.size() - 1).setName(name);
 			arrayListsOfObjects.strings.get(arrayListsOfObjects.strings.size() - 1).setTheString(theString);

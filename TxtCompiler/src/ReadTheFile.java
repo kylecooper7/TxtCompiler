@@ -40,18 +40,7 @@ readLines("TestCode");
 
 		public static void lookForTriggers(String line) {
 			
-			for(int i = 0; i < arrayListsOfObjects.triggers.size(); i++) {
-				
-				if(line.equals(arrayListsOfObjects.triggers.get(i))) {
-				
-					
-					
-				}
-				
-			}
-			
-			
-		
+			Instructions.assignInstructions(line);
 			
 		}
 

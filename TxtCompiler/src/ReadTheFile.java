@@ -8,7 +8,7 @@ import java.io.IOException;
 public class ReadTheFile
 	{
 
-		public static void RunAll()
+		public static void RunIt()
 			{
 readLines("TestCode");
 			}
@@ -16,14 +16,15 @@ readLines("TestCode");
 		public static void readLines(String fileName)
 			{
 				String line = null;
-				String trigga;
+
 				try
 					{
 						FileReader fileReader = new FileReader(fileName);
 						BufferedReader bufferedReader = new BufferedReader(fileReader);
+						
 						while ((line = bufferedReader.readLine()) != null)
 							{
-								
+								lookForTriggers(line);
 								
 							}
 						bufferedReader.close();
@@ -36,6 +37,23 @@ readLines("TestCode");
 					}
 
 			}
+
+		public static void lookForTriggers(String line) {
+			
+			for(int i = 0; i < arrayListsOfObjects.triggers.size(); i++) {
+				
+				if(line.equals(arrayListsOfObjects.triggers.get(i))) {
+				
+					
+					
+				}
+				
+			}
+			
+			
+		
+			
+		}
 
 		
 

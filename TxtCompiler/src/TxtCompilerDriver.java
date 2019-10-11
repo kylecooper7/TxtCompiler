@@ -5,7 +5,8 @@ public class TxtCompilerDriver
 
 		public static void main(String[] args)
 			{
-				ReadTheFile.RunAll();
+			
+				ReadTheFile.RunIt();
 
 			}
 

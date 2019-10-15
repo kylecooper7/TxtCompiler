@@ -116,6 +116,15 @@ public class Instructions {
 		if(words[3].equals("true;")) {
 		value = true;
 		}
+			else if (words[3].equals("false;")){
+				String theirInput = stringInput.nextLine();
+				if(theirInput.equals("true")) {
+				value = true;
+				}
+				else {
+				value = false;
+				}
+			}
 			else {
 				value = false;
 			}
